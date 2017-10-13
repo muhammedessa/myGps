@@ -1,17 +1,63 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>GPS tracking system</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h2>Welcome to GPS system!</h2>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+ <ion-icon ios="ios-locate" md="md-locate"></ion-icon>
+
+      </ion-avatar>
+      <h2>Latitude : {{lat}}</h2>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon ios="ios-locate" md="md-locate"></ion-icon>
+
+      </ion-avatar>
+      <h2>Longitude : {{long}}</h2>
+
+    </ion-item>
+
+
+
+    <ion-item>
+
+  <button ion-button color="secondary" (click)="startGps()">Start</button>
+ <button ion-button color="danger" (click)="stopGps()">Stop</button>
+
+
+    </ion-item>
+
+
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon ios="ios-locate" md="md-locate"></ion-icon>
+
+      </ion-avatar>
+      <h2>altitude : {{latt}}</h2>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon ios="ios-locate" md="md-locate"></ion-icon>
+
+      </ion-avatar>
+      <h2>accuracy : {{accu}}</h2>
+
+    </ion-item>
+
+  </ion-list>
+
+
+
 </ion-content>
